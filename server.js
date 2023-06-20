@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname,"./e-client/build")))
 app.use('/api/v1/product',productRoutes);
 
 app.use('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./e-client/build/index.html '))
+    res.sendFile(path.join(__dirname,'./e-client/build/index.html'))
 })
 
 const PO = process.env.PORT;
